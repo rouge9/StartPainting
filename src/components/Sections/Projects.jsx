@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import LiquidButton from "../../LiquidButton";
 
 // Components
 import ProjectBox from "../Elements/ProjectBox";
@@ -87,15 +86,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="row flexCenter">
-            <div style={{ margin: "50px 0", width: "200px" }}>
-              <LiquidButton
-                class="lordmore"
-                name="Load More"
-                background="white"
-                firstcolor="#ffb120"
-                secondcolor="red"
-              />
-            </div>
+            <div style={{ margin: "50px 0", width: "200px" }}></div>
           </div>
         </div>
       </div>

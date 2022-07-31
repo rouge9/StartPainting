@@ -1,15 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export default function ProjectBox({ img, title, text, action }) {
   return (
     <Wrapper>
-      <ImgBtn
-        className="aniamte pointer"
-        onClick={action ? () => action() : null}
-      >
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
         <img className="radius8" src={img} alt="project"></img>
-      </ImgBtn>
+      </motion.div>
       <h3 className="font20 extraBold">{title}</h3>
       <p className="font13">{text}</p>
     </Wrapper>
